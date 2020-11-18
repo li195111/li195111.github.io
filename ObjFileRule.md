@@ -1,32 +1,32 @@
-# List of geometric vertices, with (x, y, z [,w]) coordinates, w is optional and defaults to 1.0.
-v 0.123 0.234 0.345 1.0
+## List of geometric vertices, with (x, y, z [,w]) coordinates, w is optional and defaults to 1.0.
+`v 0.123 0.234 0.345 1.0
 v ...
-...
+...`
 
-# List of texture coordinates, in (u, [,v ,w]) coordinates, these will vary between 0 and 1. v, w are optional and default to 0.
+## List of texture coordinates, in (u, [,v ,w]) coordinates, these will vary between 0 and 1. v, w are optional and default to 0.
 > vt 0.500 1 [0]
 > vt ...
 > ...
 
-# List of vertex normals in (x,y,z) form; normals might not be unit vectors.
+## List of vertex normals in (x,y,z) form; normals might not be unit vectors.
 > vn 0.707 0.000 0.707
 > vn ...
 > ...
 
-# Parameter space vertices in ( u [,v] [,w] ) form; free form geometry statement ( see below )
+## Parameter space vertices in ( u [,v] [,w] ) form; free form geometry statement ( see below )
 > vp 0.310000 3.210000 2.100000
 > vp ...
 > ...
 
-# Polygonal face element (see below)
+## Polygonal face element (see below)
 
-## Vertex indices
+### Vertex indices
 > f v1 v2 v3 ...
 
-## Vertex texture coordinate indices
+### Vertex texture coordinate indices
 > f v1/vt1 v2/vt2 v3/vt3 ...
 
-## Vertex normal indices
+### Vertex normal indices
 > f v1/vt1/vn1 v2/vt2/vn2 v3/vt3/vn3 ...
 
 > f 1 2 3
@@ -36,12 +36,12 @@ v ...
 > f ...
 > ...
 
-# Line element (see below)
-## Line elements
+## Line element (see below)
+### Line elements
 > l v1 v2 v3 v4 v5 v6 ...
 
 >l 5 8 1 2 4 9
 
-# Referencing materials
+## Referencing materials
 > mtllib [external .mtl file name]
 > ...
