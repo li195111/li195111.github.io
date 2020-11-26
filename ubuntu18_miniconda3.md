@@ -14,13 +14,10 @@
     - Press ENTER to confirm the location
     - Press CTRL-C to abort the installation
     - Or specify a different location below
-    [/home/<username>/miniconda3] >>> /opt/miniconda3
+    [/home/<username>/miniconda3] >>> Enter
 
     Do you wish the installer to initialize Miniconda3
     in your /home/<username>/.bashrc ? [yes|no]
-    [no] >>> no
-
-    # Week connect
-    sudo ln -s /opt/miniconda3/etc/profile.d/conda.sh /etc/profile.d/conda.sh
+    [no] >>> yes
 
     rm -rf Miniconda3-py37_4.8.2-Linux-x86_64.sh
