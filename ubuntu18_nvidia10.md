@@ -1,4 +1,4 @@
-# Ubuntu 18.04 + Nvidia CUDA 10.2 + CUDnn 8
+# Ubuntu 18.04 + Nvidia CUDA 10.2 + CUDnn 8 x64
 
 ### Nvidia Device
     sudo apt-get update
@@ -86,9 +86,8 @@
     Built on Wed_Oct_23_19:24:38_PDT_2019
     Cuda compilation tools, release 10.2, V10.2.89
 
-### 安裝 CUDnn 8
-    # Download from CUDnn Home Page --- need to login nvidia
-    https://developer.nvidia.com/cudnn
+### 下載 & 安裝 CUDnn 8 || Download & Install CUDnn 8
+Download from [CUDnn Home Page](https://developer.nvidia.com/cudnn) need to login nvidia 
 
     cd ~/Downloads
 
