@@ -1,10 +1,12 @@
 # Ubuntu 18.04 + Nvidia CUDA 10.2 + CUDnn 8 x64
 
 ### Nvidia Device
+
     sudo apt-get update
     sudo ubuntu-drivers devices
 
 ### 安裝缺失的套件 --- 重複檢查直到沒有缺失
+
     sudo ubuntu-drivers autoinstall
 
     The following packages have unmet dependencies:
@@ -13,12 +15,15 @@
     sudo apt-get install nvidia-driver-xxx
 
 ### 刪除多餘的套件
+
     sudo apt autoremove
 
 ### 重新開機
+
     sudo reboot
 
 ### 檢查
+
     nvidia-smi
 
     正常會看到這個畫面
@@ -47,6 +52,7 @@
     +-----------------------------------------------------------------------------+
 
 ### 安裝 CUDA 10.2
+
     wget https://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run
     sudo sh cuda_10.2.89_440.33.01_linux.run
 
@@ -68,25 +74,31 @@
     rm -rf cuda_10.2.2_linux.run
 
 ### 修改終端機 modify bash
+
     sudo gedit ~/.bashrc
 
 ### 將下列兩行加到最後
+
     export PATH=/usr/local/cuda-10.2/bin:$PATH
     export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
 
 ### Ctrl + S 存檔 然後回到終端機重新載入
+
     source /.bashrc
 
 ### 檢查 CUDA 是否安裝成功
+
     nvcc -V
 
 ### 成功回傳
+
     nvcc: NVIDIA (R) Cuda compiler driver
     Copyright (c) 2005-2019 NVIDIA Corporation
     Built on Wed_Oct_23_19:24:38_PDT_2019
     Cuda compilation tools, release 10.2, V10.2.89
 
 ### 下載 & 安裝 CUDnn 8 || Download & Install CUDnn 8
+
 Download from [CUDnn Home Page](https://developer.nvidia.com/cudnn) need to login nvidia 
 
     cd ~/Downloads

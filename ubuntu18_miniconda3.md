@@ -2,6 +2,7 @@
 
 ### Thist Page will show how to install Miniconda3 Python3.7 x86_64 version
 ### Other version can see [Here](https://repo.anaconda.com/miniconda/)
+
     wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.8.2-Linux-x86_64.sh
     sudo bash Miniconda3-py37_4.8.2-Linux-x86_64.sh
 
